@@ -62,12 +62,14 @@ export default function Main() {
                     </p>
                 </Card>
             </div>
-            <h4>Case Study</h4>
+            <h4 className='mt-[44px]'>Case Study</h4>
             <p>See what Service Incubators get, the maths behind Service Equity (SEEQ) and what the value of your share equity can be over time</p>
-            <Button text={"Service Incubator Equity"}/>
-            <Button text={"Seeq Maths Equation"} type={"tertiary"}/>
-            <a href="#">Value of my Equity Over Time</a>
-            <a href="#">Become A Service Incubator <BsArrowRightShort /></a>
+            <div className={styles.hypoLinks}>
+                <Button text={"Service Incubator Equity"}/>
+                <Button text={"Seeq Maths Equation"} type={"tertiary"}/>
+                <a className="px-[28px] underline" href="#">Value of my Equity Over Time</a>
+            </div>
+            <a href="#" className='flex underline text-sm items-center font-bold justify-center my-[44px]'><p>Become A Service Incubator</p> <BsArrowRightShort /></a>
         </div>
         <h3>Our Startup Portfolio</h3>
         <p>Some of our 2023 Service Incubator Portfolio Companies</p>

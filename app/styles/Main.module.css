@@ -33,3 +33,12 @@
 .hypothesis> div> div{
     height: 228px !important;
 }
+.hypoLinks{
+    display: flex;
+    justify-content: flex-start !important;
+    align-items: center;
+    gap: 12px !important;
+}
+.hypoLinks a{
+    padding-block: 12px;
+}
