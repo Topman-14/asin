@@ -1,0 +1,11 @@
+.links{
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+}
+.links> li{
+    transition: 0.25s;
+}
+.links> li:hover{
+    color: #1F66AB;
+}

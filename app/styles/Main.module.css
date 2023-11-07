@@ -1,0 +1,35 @@
+.main{
+    display: flex;
+    flex-direction: column;
+    padding: 16px;
+    align-items: center;
+    margin-top: 90px;
+}
+.main> h3{
+    font-size: 3.5em;
+    line-height: 1em;
+    text-align: center;
+    margin-top: 60px;
+    color: #212121;
+}
+.main> p{
+    color: #4E4E4E;
+    text-align: center;
+    margin: 32px 0 32px 0;
+    max-width: 900px;
+}
+.hypothesis> h4{
+    font-size: 2em;
+}
+.hypothesis> p{
+    color: #4E4E4E;
+}
+.hypothesis> div{
+    display: flex;
+    justify-content: center;
+    gap: 28px;
+    margin-top: 64px;
+}
+.hypothesis> div> div{
+    height: 228px !important;
+}
