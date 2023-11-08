@@ -1,8 +1,55 @@
 .footer{
     height: 100vh;
     background: #212121;
-    padding: 40px 100px;
     display: flex;
     flex-direction: column;
     width: 100%;
+    color: #fff;
+}
+.newsletter{
+    height: 40%;
+    padding: 40px 100px;
+}
+.links{
+    border-block: 1px solid #676767;
+    height: 40%;
+    display: flex;
+}
+.mainLinks{
+    width: 70%;
+    padding-left: 100px;
+    color: #C9C9C9;
+}
+.otherLinks{
+    width: 30%;
+    border-left: 1px solid #676767;
+}
+.bottom{
+    height: 20%;
+}
+.newsletterDesc{
+    margin-top: 20px;
+    max-width: 510px;
+}
+.newsletterForm{
+    margin-top: 60px;
+}
+.newsletterForm> button{
+    border-radius: 30px;
+    background: #FFF;
+    padding: 14px 20px;
+    color: #212121;
+    font-weight: 700;
+    width: 130px;
+    border: 1px solid #fff;
+    margin-left: -40px;
+}
+.emailInput{
+    border-radius: 30px;
+    border: 1px solid #676767;
+    font-weight: 600;
+    background: #212121;
+    padding: 14px 20px;
+    width: 400px;
+    /* color: white; */
 }
