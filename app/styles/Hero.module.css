@@ -7,6 +7,7 @@
     height: 65%;
     display: flex;
     background: #fff;
+    position: relative;
 }
 .quote{
     height: 35%;
@@ -62,6 +63,7 @@
     object-position: center;
 }
 .quote > div{
+    width: 85%;
     max-width: 600px;
     padding: 32px 20px;
     margin: 0 auto;
@@ -76,4 +78,28 @@
 }
 .quote p{
     text-align: center;
+}
+@media (max-width: 1100px) {
+    .text{
+        padding: 10px 0 0 30px;
+    }
+}
+@media (max-width: 950px) {
+    .text{
+        text-align: center;
+        z-index: 30;
+        padding: 0;
+        position: absolute;
+        align-items: center;
+        color: #fff;
+        height: 100%;
+        width: 100%;
+        background: linear-gradient(0deg, black, rgba(0, 0, 0, 0.493), rgba(0, 0, 0, 0.522));
+    }
+    .image{
+        width: 100%;
+    }
+    .middleTiles{
+        display: none;
+    }
 }

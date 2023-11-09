@@ -25,10 +25,23 @@ export default function Footer(){
               <li><a href="#">InResidencies</a></li>
               <li><a href="#">Service Market</a></li>
               <li><a href="#">Founder School</a></li>
-              <li><a href="#"></a></li>
+              <li><a href="#">Metty</a></li>
+              <li><a href="#">Grantty</a></li>
+              <li><a href="#">SBO</a></li>
             </ul>
           </div>
-          <div></div>
+          <div>
+            <p>Initiatives</p>
+            <ul>
+              <li><a href="#">Jabi Plains</a></li>
+              <li><a href="#">Regional Pricing Initiative</a></li>
+              <li><a href="#">Scholarship Program</a></li>
+              <li><a href="#">School Pricing Program</a></li>
+              <li><a href="#">University STEM</a></li>
+              <li><a href="#">University InResidency</a></li>
+              <li><a href="#">Founders Festival</a></li>
+            </ul>
+          </div>
           <div></div>
           <div></div>
         </div>
