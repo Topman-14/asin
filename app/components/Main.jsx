@@ -15,7 +15,7 @@ export default function Main() {
         <Button text={"Read About Us"}/>
         <h3>Our 5 Areas of Focus</h3>
         <p>In our quest to help make success available to everyone, we have initial strategic <br />directions to focus on these five (5) key areas at the lab</p>
-        <div className='flex justify-center flex-wrap mt-6 mb-16'>
+        <div className='flex justify-center flex-wrap mt-6 mb-16 mx-5'>
             <Tile color={"#1F66AB"} title={"01"} text={"Business Support & Incubation"} />
             <Tile color={"#F47733"} title={"02"} text={"On-Demand & As-A-Service"} />
             <Tile color={"#FF78BF"} title={"03"} text={"Marketplace & Crowdsourcing"} />
@@ -24,7 +24,7 @@ export default function Main() {
         </div>
         <h3>We are your 3rd Co-founder</h3>
         <p>We seek to collaborate with visionary individuals who are solving similar problems of helping entrepreneurs succeed</p>
-        <div className='flex justify-center gap-[40px] mb-[80px]'>
+        <div className='flex flex-wrap justify-center gap-[40px] mb-[80px]'>
             <Card number={"1"} title={"Ideate"} color={"#1F66AB"}>
                 <p>
                 We internally generate concepts and ideas that help solve problems in our thesis areas, after which we proceed to develop a nano/micro MVP (usually having as low as 30 functions to as high as 100 functions) of the product that we take to the market
@@ -87,7 +87,7 @@ export default function Main() {
             <Card title={"Diming"}>A progressive investment model that allows you to put aside income (disposable or non-disposable) as investment over a period towards an investment or spend of your choice</Card>
         </div>
         <h3>Our Process</h3>
-        <div className={styles.sliderContainer}>
+        {/* <div className={styles.sliderContainer}>
             <div className={styles.slider}>
 
                 <Card title={"Source Ideas & Ideate"} color={"#4E4E4E"} number={0}>We come up with our own ideas internally and/or take in exceptional entrepreneurs with ideas within or outside our thesis area into our Service incubation Program (SIP) yearly, then run them through our idea-focus-test (IFT) for fit.
@@ -102,7 +102,7 @@ export default function Main() {
                 <Card title={"Build, Launch, Validate & Grow"} color={"#4E4E4E"} number={0}>For the ideas that are ready to market after the 4 weeks of market acceptance test, the Service Incubators will proceed to build the complete MVP for an exchange of 10% equity in the startup usually having as much as 250 functionalities for another 12 weeks in return for the service shares.
                 This MVP will be validated in a large and broader market for final iteration before raising funds for further development</Card>
             </div>
-        </div>
+        </div> */}
         <div>
             <div></div>
             <div></div>

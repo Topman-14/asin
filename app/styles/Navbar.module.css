@@ -9,3 +9,31 @@
 .links> li:hover{
     color: #1F66AB;
 }
+.logoImg{
+    width: 151px;
+    height: 58px;
+}
+.menuBtn{
+ display: none;
+ font-size: 1.8em;
+}
+.ctaBtns{
+    display: flex;
+    gap: 16px;
+}
+.header{
+    padding: 20px 120px;
+}
+@media (max-width: 1250px) {
+    .menuBtn{
+        display: unset;
+    }
+    .ctaBtns, .links{
+        display: none;
+    }
+}
+@media (max-width: 900px) {
+   .header{
+    padding: 20px 25px;
+   }
+}

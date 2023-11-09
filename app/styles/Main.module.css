@@ -1,7 +1,7 @@
 .main{
     display: flex;
     flex-direction: column;
-    padding: 16px;
+    padding: 22px;
     align-items: center;
     margin-top: 90px;
 }
@@ -26,12 +26,14 @@
 }
 .hypothesis> div{
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     gap: 28px;
     margin-top: 44px;
 }
 .hypothesis> div> div{
-    height: 228px !important;
+    height: fit-content;
+    min-height: 228px;
 }
 .hypoLinks{
     display: flex;
@@ -44,15 +46,18 @@
 }
 .companies{
     display: grid;
-    grid-template-columns: repeat(8, 1fr);
-    grid-template-rows: repeat(5, 1fr);
+    /* grid-template-rows: repeat(auto-fit, 60px); */
+    grid-template-columns: repeat(auto-fit, 120px);
     gap: 25px;
+    width: 80%;
+    place-content: center;
+    max-width: 1250px;
     margin-top: 20px;
 }
 .companies>div{
     background: #fff;
     border-radius: 12px;
-    border: 0.932px solid var(--foundation-secondary-colour-grey-50, #E9E9E9);
+    border: 0.932px solid #E9E9E9;
     width: 120px;
     height: 60px;
     display: flex;
@@ -63,6 +68,7 @@
 .concept{
     display: flex;
     gap: 40px;
+    flex-wrap: wrap;
     justify-content: center;
     margin: 30px 0 60px 0;
 }
@@ -85,4 +91,14 @@
 .sliderContainer{
     width: 100%;
     overflow: hidden;
+}
+@media (max-width: 400px) {
+    .main> h3{
+        font-size: 2.5em;
+    }
+}
+@media (max-width: 508px) {
+    .hypoLinks{
+        justify-content: center !important;
+    }
 }

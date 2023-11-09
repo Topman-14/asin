@@ -1,17 +1,18 @@
 import styles from '../styles/Navbar.module.css'
 import Button from './Button'
 import Link from 'next/link'
+import {LuMenu} from "react-icons/lu";
 
 
-function Navbar() {
+function Navbar({handleClick}) {
 
   return (
     // <header className={} style={{top: visible ? '0' : '-120px'}}>
-    <header className="px-[120px] py-[20px]" >
+    <header className={styles.header} >
       <nav className='flex justify-between items-center'>
-        <div className='flex gap-6 items-center'>
+        <div className='flex shrink-0 gap-8 items-center'>
           <Link href="#">
-            <img src="/images/logo.png" alt="ASIN5 logo" className='w-[151px] h-[58px]'/>
+            <img src="/images/logo.png" alt="ASIN5 logo" className={styles.logoImg}/>
           </Link>
           <ul className={styles.links}>
             <li><Link href="#">About Us</Link></li>
@@ -22,10 +23,11 @@ function Navbar() {
             <li><Link href="#">SEEQ</Link></li>
           </ul>
         </div>
-        <div className='flex gap-4'>
+        <div className={styles.ctaBtns}>
           <Button text="Apply for SIP 1.0" />
           <Button text="SINC With Us" type="secondary" />
         </div>
+        <button className={styles.menuBtn} onClick={handleClick}><LuMenu /></button>
       </nav>
     </header>   
   )
