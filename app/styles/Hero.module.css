@@ -22,12 +22,13 @@
 .text li> span{
     font-weight: 800;
     font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.2em;
     /* list-style-type: "\2714\0020"; */
     /* list-style-type: "✓"; */
 }
 .text> p{
     font-weight: 600;
-    font-size: 1.4em;
+    font-size: 1.8em;
 }
 .middleTiles{
     display: flex;
