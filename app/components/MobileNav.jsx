@@ -12,9 +12,9 @@ export default function MobileNav({handleClick}) {
                 <BiArrowBack />
             </button>
         </div>
-            <img src="/images/logo.png" alt="" className='w-[220px] '/>
+            <img src="/images/logo.png" alt="" className='w-[180px] '/>
         <div>
-            <ul className='flex flex-col gap-5 items-center text-3xl'>
+            <ul className='flex flex-col gap-5 items-center text-2xl'>
                 <li><Link href="#">About Us</Link></li>
                 <li><Link href="#">Companies</Link></li>
                 <li><Link href="#">Equity Jobs</Link></li>
