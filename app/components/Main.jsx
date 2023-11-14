@@ -207,6 +207,72 @@ export default function Main() {
                 <img src="/images/technfund.png" alt="" />
             </div>
         </div>
+        <h3>SINC Deals</h3>
+        <p>Our deals are structured to encourage early and people new to investment and our portfolio companies are valued at $50k at start, with these low valuation, you are guaranteed at least 2x. 
+        These deal flow is a statement of our projection and may differ from stage to stage and from company to company</p>
+        <div className={styles.dealsGrid}>
+            <div>
+                <h4>Deal 1</h4>
+                <ul>
+                    <li>Idea Stage: <span>$2.5k for 5% Equity</span></li>
+                    <li>Expected Revenue at This Stage: <span> $0/mth</span></li>
+                    <li>Duration of Raise: <span>1mth</span></li>
+                </ul>
+            </div>
+            <div>
+                <h4>Deal 2</h4>
+                <ul>
+                    <li>Build Stage: <span>$25k for 10% Equity</span></li>
+                    <li>Expected Revenue at This Stage: <span> $100+/mth</span></li>
+                    <li>Duration of Raise: <span>1-3mths</span></li>
+                </ul>
+            </div>
+            <div>
+                <h4>Deal 3</h4>
+                <ul>
+                    <li>Validate Stage: <span>$50k for 5% Equity</span></li>
+                    <li>Expected Revenue at This Stage: <span> $1k+/mth</span></li>
+                    <li>Duration of Raise: <span>3-6mths</span></li>
+                </ul>
+            </div>
+            <div style={{borderRight:"none"}}>
+                <h4>Deal 4</h4>
+                <ul>
+                    <li>Acceleration Stage: <span>$125k for 5% Equity</span></li>
+                    <li>Expected Revenue at This Stage: <span> $5k+/mth</span></li>
+                    <li>Duration of Raise: <span>6-12mths</span></li>
+                </ul>
+            </div>
+            <div>
+                <h4>Deal 5</h4>
+                <ul>
+                    <li>Pre-seed Stage: <span>$1.5M for 10% Equity</span></li>
+                    <li>Expected Revenue at This Stage: <span> $50k+/mth</span></li>
+                    <li>Duration of Raise: <span>6-18mths</span></li>
+                </ul>
+            </div>
+            <div>
+                <h4>Deal 6</h4>
+                <ul>
+                    <li>Seed Stage: <span>$7.5M for 20% Equity</span></li>
+                    <li>Expected Revenue at This Stage: <span> $250k+/mth</span></li>
+                    <li>Duration of Raise: <span>12-24mths</span></li>
+                </ul>
+            </div>
+            <div>
+                <h4>Deal 7</h4>
+                <ul>
+                    <li>IPO Stage: <span>$1.5B for 20% Equity</span></li>
+                    <li>Expected Revenue at This Stage: <span> $1M+/mth</span></li>
+                    <li>Duration of Raise: <span>18-36mths</span></li>
+                </ul>
+            </div>
+            <div style={{borderRight:"none"}}>
+                <h3>Invest from $500 as a Mikro Angel in portfolio companies</h3>
+                <Button text={"SINC With a Deal"}/>
+            </div>
+        </div>
+        <h3>Blogs & Resources</h3>
     </section>
   )
 }

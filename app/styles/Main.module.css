@@ -191,6 +191,47 @@
     height: 160px;
     flex-shrink: 0;
 }
+.dealsGrid{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 300px);
+    place-content: center;
+    max-width: 1200px;
+    margin-top: 12px;
+    border-top:  0.5px solid #A4A4A4;
+}
+.dealsGrid > div{
+    padding: 20px;
+    border-bottom:  0.5px solid #A4A4A4;
+    border-right:  0.5px solid #A4A4A4;
+    /* height: 150px; */
+}
+.dealsGrid > h4{
+    font-weight: 500;
+    font-size: 1.2em;
+    margin-bottom: 12px;
+}
+.dealsGrid ul{
+    padding-left: 10px;
+}
+.dealsGrid li{
+    list-style-type: "✓ ";
+    font-size: 0.85em;
+}
+.dealsGrid li> span{
+    color: #1F66AB;
+}
+.dealsGrid li::marker {
+    font-weight: 900;
+  }
+  .dealsGrid > div:last-of-type{
+    background: #101010;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 10px;
+    padding: 12px;
+  }
 @media (max-width: 400px) {
     .main> h3{
         font-size: 2.5em;
