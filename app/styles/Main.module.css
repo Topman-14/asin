@@ -48,10 +48,10 @@
     display: grid;
     /* grid-template-rows: repeat(auto-fit, 60px); */
     grid-template-columns: repeat(auto-fit, 120px);
-    gap: 25px;
-    width: 80%;
+    gap: 18px;
+    width: 100%;
     place-content: center;
-    max-width: 1250px;
+    max-width: 1100px;
     margin-top: 20px;
 }
 .companies>div{
@@ -92,6 +92,146 @@
     width: 100%;
     overflow: hidden;
 }
+.sliderControls{
+    display: flex;
+    justify-content: center;
+    gap: 75px;
+    margin: 75px 0 60px 0;
+}
+.sliderControls> div{
+    width: 66px;
+    height: 66px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    border: 1px solid #4E4E4E;
+    font-size: 1.8em;
+    color: #4E4E4E;
+}
+.wwbSection{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 24px 0 60px 0;
+}
+.wwbSection > div{
+    gap: 17px;
+    justify-content: flex-start;
+}
+.noMarginP{
+    margin: 0;
+}
+.departments{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 64px;
+    margin: 36px 0 60px 0;
+}
+.departments > div{
+    display: flex;
+    gap: 12px;
+    flex-direction: column;
+    align-items: center;
+}
+.departments > div > img{
+    width: 30px;
+    height: 30px;
+}
+.testsText{
+    width: 50%;
+}
+.testsGrid{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    max-width: 600px;
+}
+.testsGrid> div{
+    display: flex;
+    gap: 32px;
+}
+.testsGrid> div > div{
+    width: 300px;
+}
+.testNum{
+    display: flex;
+    align-items: center;
+    gap: 5px !important;
+}
+.testsGrid hr{
+    width: 100%;
+}
+.pMaxWidth{
+    max-width: 500px !important;
+}
+.mattersCardWrapper{
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 32px 0 60px 0;
+}
+.mattersCardWrapper > div{
+    display: flex;
+    height: 328px;
+    padding: 16px;
+    flex-direction: column;
+    justify-content: space-between;
+    background: #fff;
+}
+.mattersCardWrapper > div> p{
+    font-size: 1.5em;
+    color: #212121;
+    max-width: 232px;
+}
+.mattersCardWrapper > div> img{
+    width: 200px;
+    height: 160px;
+    flex-shrink: 0;
+}
+.dealsGrid{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 300px);
+    place-content: center;
+    max-width: 1200px;
+    margin-top: 12px;
+    border-top:  0.5px solid #A4A4A4;
+}
+.dealsGrid > div{
+    padding: 20px;
+    border-bottom:  0.5px solid #A4A4A4;
+    border-right:  0.5px solid #A4A4A4;
+    /* height: 150px; */
+}
+.dealsGrid > h4{
+    font-weight: 500;
+    font-size: 1.2em;
+    margin-bottom: 12px;
+}
+.dealsGrid ul{
+    padding-left: 10px;
+}
+.dealsGrid li{
+    list-style-type: "✓ ";
+    font-size: 0.85em;
+}
+.dealsGrid li> span{
+    color: #1F66AB;
+}
+.dealsGrid li::marker {
+    font-weight: 900;
+  }
+  .dealsGrid > div:last-of-type{
+    background: #101010;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 10px;
+    padding: 12px;
+  }
 @media (max-width: 400px) {
     .main> h3{
         font-size: 2.5em;

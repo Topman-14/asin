@@ -23,9 +23,9 @@ export default function MobileNav({handleClick}) {
                 <li><Link href="#">SEEQ</Link></li>
             </ul>
         </div>
-        <div className='flex gap-4 flex-col items-center'>
-            <Button text="Apply for SIP 1.0" />
+        <div className='flex gap-4 pb-12 flex-col items-center'>
             <Button text="SINC With Us" type="secondary" />
+            <Button text="Apply for SIP 1.0" />
         </div>
     </div>
   )

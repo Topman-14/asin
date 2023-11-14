@@ -2,7 +2,7 @@ import React from 'react'
 import Button from './Button'
 import Tile from './Tile'
 import Card from './Card'
-import { BsArrowRightShort } from "react-icons/bs"
+import { BsArrowBarLeft, BsArrowBarRight, BsArrowLeft, BsArrowRight, BsArrowRightShort } from "react-icons/bs"
 import styles from "../styles/Main.module.css"
 import{ companies } from "../data.js"
 
@@ -87,7 +87,7 @@ export default function Main() {
             <Card title={"Diming"}>A progressive investment model that allows you to put aside income (disposable or non-disposable) as investment over a period towards an investment or spend of your choice</Card>
         </div>
         <h3>Our Process</h3>
-        {/* <div className={styles.sliderContainer}>
+        <div className={styles.sliderContainer}>
             <div className={styles.slider}>
 
                 <Card title={"Source Ideas & Ideate"} color={"#4E4E4E"} number={0}>We come up with our own ideas internally and/or take in exceptional entrepreneurs with ideas within or outside our thesis area into our Service incubation Program (SIP) yearly, then run them through our idea-focus-test (IFT) for fit.
@@ -102,63 +102,177 @@ export default function Main() {
                 <Card title={"Build, Launch, Validate & Grow"} color={"#4E4E4E"} number={0}>For the ideas that are ready to market after the 4 weeks of market acceptance test, the Service Incubators will proceed to build the complete MVP for an exchange of 10% equity in the startup usually having as much as 250 functionalities for another 12 weeks in return for the service shares.
                 This MVP will be validated in a large and broader market for final iteration before raising funds for further development</Card>
             </div>
-        </div> */}
-        <div>
-            <div></div>
-            <div></div>
+        </div>
+        <div className={styles.sliderControls}>
+            <div><BsArrowLeft /> </div>
+            <div><BsArrowRight /></div>
         </div>
         <h3>What We Bring</h3>
         <p>We empower visioners to build the future with us and we provide</p>
-        <div className='flex justify-center flex-wrap mt-6 mb-16'>
+        <div className={styles.wwbSection}>
             <Tile color={"#1F66AB"} title={"01"} text={"Validated Business Opportunity"} />
             <Tile color={"#F47733"} title={"02"} text={"Experience & Expertise"} />
             <Tile color={"#FF78BF"} title={"03"} text={"Financial Support"} />
             <Tile color={"#20888F"} title={"04"} text={"Extensive Network & Experience"} />
-            <Tile color={"#FF88C6"} title={"05"} text={"Technical Resources & Strategic Guidiance"} />
+            <Tile color={"#FF88C6"} title={"05"} text={"Technical Resources & Strategic Guidiance"}/>
         </div>
-        <h4>We support across these areas of departments</h4>
-        <p>We are an experienced team of founders and operators whi have started dozens of companies, and created billions of dollars in enterprise value</p>
-        {/* <div>
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
-        </div>
-        <div className='flex'>
+        <h4 className='text-4xl mb-4'>We support across these areas of departments</h4>
+        <p className={styles.noMarginP}>We are an experienced team of founders and operators that have started dozens of companies, and created billions of dollars in enterprise value</p>
+        <div className={styles.departments}>
             <div>
-                <h3>Our 5 Idea-Focus-Test</h3>
-                <p>Our quick 5 critical question we usually answer to test an idea for investment and if it passes our value and vision test.</p>
-                <Button text={"Apply to SIP 1.0"}/>
+                <img src="/images/icons/search-normal.svg" alt="" />
+                <p>Product</p>
             </div>
             <div>
+                <img src="/images/icons/mouse-circle.svg" alt="" />
+                <p>Design</p>
+            </div>
+            <div>
+                <img src="/images/icons/code-circle.svg" alt="" />
+                <p>Engineering</p>
+            </div>
+            <div>
+                <img src="/images/icons/ei_comment.svg" alt="" />
+                <p>HR</p>
+            </div>
+            <div>
+                <img src="/images/icons/Vector.svg" alt="" />
+                <p>Finance</p>
+            </div>
+            <div>
+                <img src="/images/icons/megaphone.svg" alt="" />
+                <p>Marketing</p>
+            </div>
+            <div>
+                <img src="/images/icons/shield.svg" alt="" />
+                <p>Legal</p>
+            </div>
+            <div>
+                <img src="/images/icons/Group.svg" alt="" />
+                <p>Operations</p>
+            </div>
+        </div>
+        <div className='flex gap-6 px-3'>
+            <div className={styles.testsText}>
+                <h3 className='pb-[24px] text-5xl'>Our 5 Idea-Focused-Tests</h3>
+                <p className='pb-[60px] max-w-[450px]'>Our quick 5 critical questions we usually answer to test an idea for investments and if it passes our value and vision test.</p>
+                <Button text={"Apply to SIP 1.0"}/>
+            </div>
+            <div className={styles.testsGrid}>
                 <div>
-                    <p>01</p>
-                    <p>Will the solution help democratize success for everyone?</p>
+                    <div>
+                        <div className={styles.testNum}><span>01</span><hr /></div>
+                        <p>Will the solution help democratize success for everyone?</p>
+                    </div>
+                    <div>
+                        <div className={styles.testNum}><span>02</span><hr /></div>
+                        <p>Is the product solving a problem for service providers and entrepreneurs?</p>
+                    </div>
                 </div>
                 <div>
-                    <p>02</p>
-                    <p>Is the product solving a problem for service providers and entrepreneurs?</p>
+                    <div>
+                        <div className={styles.testNum}><span>03</span><hr /></div>
+                        <p>Is the solution a good to have or a must have?</p>
+                    </div>
+                    <div>
+                        <div className={styles.testNum}><span>04</span><hr /></div>
+                        <p>Is the product a platform-based product?</p>
+                    </div>
                 </div>
-                <div>
-                    <p>03</p>
-                    <p>Is the solution a good to have or must have?</p>
-                </div>
-                <div>
-                    <p>04</p>
-                    <p>Is the product a platform-based product?</p>
-                </div>
-                <div>
-                    <p>05</p>
+                        <div className={styles.testNum}><span>05</span><hr /></div>
                     <p>Is the timing right or are we willing to stick with it till its accepted as been self-evident?</p>
-                </div>
             </div>
         </div>
         <h3>What Matters Most</h3>
-        <p>For every startup in our portfolio and as part of our success strategies, we have key 5 areas of importance in order of preference. </p> */}
+        <p className={styles.pMaxWidth}>For every startup in our portfolio and as part of our success strategies, we have key 5 areas of importance in order of preference. </p>
+        <div className={styles.mattersCardWrapper}>
+            <div>
+                <p>Timing</p>
+                <img src="/images/timing.png" alt="" />
+            </div>
+            <div>
+                <p>Team Execution</p>
+                <img src="/images/team.png" alt="" />
+            </div>
+            <div>
+                <p>The Idea / Product</p>
+                <img src="/images/idea.png" alt="" />
+            </div>
+            <div>
+                <p>Busines Model and Traction</p>
+                <img src="/images/model.png" alt="" />
+            </div>
+            <div>
+                <p>Technology and Funding</p>
+                <img src="/images/technfund.png" alt="" />
+            </div>
+        </div>
+        <h3>SINC Deals</h3>
+        <p>Our deals are structured to encourage early and people new to investment and our portfolio companies are valued at $50k at start, with these low valuation, you are guaranteed at least 2x. 
+        These deal flow is a statement of our projection and may differ from stage to stage and from company to company</p>
+        <div className={styles.dealsGrid}>
+            <div>
+                <h4>Deal 1</h4>
+                <ul>
+                    <li>Idea Stage: <span>$2.5k for 5% Equity</span></li>
+                    <li>Expected Revenue at This Stage: <span> $0/mth</span></li>
+                    <li>Duration of Raise: <span>1mth</span></li>
+                </ul>
+            </div>
+            <div>
+                <h4>Deal 2</h4>
+                <ul>
+                    <li>Build Stage: <span>$25k for 10% Equity</span></li>
+                    <li>Expected Revenue at This Stage: <span> $100+/mth</span></li>
+                    <li>Duration of Raise: <span>1-3mths</span></li>
+                </ul>
+            </div>
+            <div>
+                <h4>Deal 3</h4>
+                <ul>
+                    <li>Validate Stage: <span>$50k for 5% Equity</span></li>
+                    <li>Expected Revenue at This Stage: <span> $1k+/mth</span></li>
+                    <li>Duration of Raise: <span>3-6mths</span></li>
+                </ul>
+            </div>
+            <div style={{borderRight:"none"}}>
+                <h4>Deal 4</h4>
+                <ul>
+                    <li>Acceleration Stage: <span>$125k for 5% Equity</span></li>
+                    <li>Expected Revenue at This Stage: <span> $5k+/mth</span></li>
+                    <li>Duration of Raise: <span>6-12mths</span></li>
+                </ul>
+            </div>
+            <div>
+                <h4>Deal 5</h4>
+                <ul>
+                    <li>Pre-seed Stage: <span>$1.5M for 10% Equity</span></li>
+                    <li>Expected Revenue at This Stage: <span> $50k+/mth</span></li>
+                    <li>Duration of Raise: <span>6-18mths</span></li>
+                </ul>
+            </div>
+            <div>
+                <h4>Deal 6</h4>
+                <ul>
+                    <li>Seed Stage: <span>$7.5M for 20% Equity</span></li>
+                    <li>Expected Revenue at This Stage: <span> $250k+/mth</span></li>
+                    <li>Duration of Raise: <span>12-24mths</span></li>
+                </ul>
+            </div>
+            <div>
+                <h4>Deal 7</h4>
+                <ul>
+                    <li>IPO Stage: <span>$1.5B for 20% Equity</span></li>
+                    <li>Expected Revenue at This Stage: <span> $1M+/mth</span></li>
+                    <li>Duration of Raise: <span>18-36mths</span></li>
+                </ul>
+            </div>
+            <div style={{borderRight:"none"}}>
+                <h3>Invest from $500 as a Mikro Angel in portfolio companies</h3>
+                <Button text={"SINC With a Deal"}/>
+            </div>
+        </div>
+        <h3>Blogs & Resources</h3>
     </section>
   )
 }
