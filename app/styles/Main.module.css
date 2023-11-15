@@ -1,3 +1,22 @@
+/* ::-webkit-scrollbar {
+    background: #00000000;
+} */
+
+
+.main ::-webkit-scrollbar-track {
+    background: #00000000;
+  }
+  
+  /* Handle */
+.main ::-webkit-scrollbar-thumb {
+    background: #686868;
+    border-radius: 50px;
+}
+
+ .main ::-webkit-scrollbar-thumb:hover {
+    background: #323232;
+  }
+
 .main{
     display: flex;
     flex-direction: column;
@@ -79,10 +98,8 @@
 .slider{
     display: flex;
     margin-top: 35px;
-    justify-content: center;
     gap: 32px;
     width: 1200px;
-    overflow-x: visible;
     flex-shrink: 0;
 }
 .slider> div{
@@ -90,7 +107,7 @@
 }
 .sliderContainer{
     width: 100%;
-    overflow: hidden;
+    overflow-x: scroll;
 }
 .sliderControls{
     display: flex;
@@ -108,6 +125,7 @@
     border: 1px solid #4E4E4E;
     font-size: 1.8em;
     color: #4E4E4E;
+    cursor: pointer;
 }
 .wwbSection{
     display: flex;
@@ -120,7 +138,7 @@
     justify-content: flex-start;
 }
 .noMarginP{
-    margin: 0;
+    margin: 0 !important;
 }
 .departments{
     display: flex;
@@ -170,7 +188,7 @@
     display: flex;
     gap: 10px;
     justify-content: center;
-    flex-wrap: wrap;
+    overflow-x: scroll;
     margin: 32px 0 60px 0;
 }
 .mattersCardWrapper > div{
@@ -196,8 +214,9 @@
     grid-template-columns: repeat(auto-fit, 300px);
     place-content: center;
     max-width: 1200px;
-    margin-top: 12px;
+    margin: 12px 0 60px 0;
     border-top:  0.5px solid #A4A4A4;
+    font-size: 0.9em;
 }
 .dealsGrid > div{
     padding: 20px;
@@ -232,10 +251,85 @@
     gap: 10px;
     padding: 12px;
   }
+.resources{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 32px;
+    max-width: 1200px;
+    height: 380px;
+    margin: 80px 0 60px 0;
+}
+.resources> div{
+    width: 378px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 48px;
+}
+.resources> div> iframe{
+    height: 243px;
+
+}
+.resources> div> div{
+    display: flex;
+    justify-content: space-between;
+}
+.resources> div> div img{
+    width: 85px;
+    height: 79px;
+    border-radius: 8px;
+    flex-shrink: 0;
+}
+.featured{
+    width: 100%;
+    display: flex;
+    overflow-x: scroll;
+    margin-top: 44px;
+    margin-bottom: 60px;
+    gap: 32px;
+}
+.featured> div{
+    width: 895px;
+    flex-shrink: 0;
+    height: 393px;
+    background: #fff;
+    display: flex;
+}
+.featured> div>img{
+    width: 70%;
+    height: 100%;
+    object-fit: cover;
+}
+.featured> div> div{
+    padding: 40px 20px;
+    font-size: 0.95em;
+}
+.featured> div> div> img{
+    width: 85px;
+}
+.featured> div> div> p:first-of-type{
+    font-weight: 600;
+    margin: 16px 0 10px 0;
+}
+.featured> div> div> p:last-of-type{
+    line-height: 1.6em;
+    margin: 20px 0 0 0;
+}
+.h2{
+    font-size: 4em !important;
+    text-align: center;
+    max-width: 800px;
+    line-height: 1.2em;
+}
 @media (max-width: 400px) {
     .main> h3{
         font-size: 2.5em;
     }
+}
+.resources div > p:first-of-type{
+    font-weight: 600;
 }
 @media (max-width: 508px) {
     .hypoLinks{
