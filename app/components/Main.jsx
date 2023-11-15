@@ -15,7 +15,7 @@ export default function Main() {
         <Button text={"Read About Us"}/>
         <h3>Our 5 Areas of Focus</h3>
         <p>In our quest to help make success available to everyone, we have initial strategic <br />directions to focus on these five (5) key areas at the lab</p>
-        <div className='flex justify-center overflow-x-scroll mt-6 mb-16 mx-5'>
+        <div className={styles.aof}>
             <Tile color={"#1F66AB"} title={"01"} text={"Business Support & Incubation"} />
             <Tile color={"#F47733"} title={"02"} text={"On-Demand & As-A-Service"} />
             <Tile color={"#FF78BF"} title={"03"} text={"Marketplace & Crowdsourcing"} />
@@ -24,7 +24,7 @@ export default function Main() {
         </div>
         <h3>We are your 3rd Co-founder</h3>
         <p>We seek to collaborate with visionary individuals who are solving similar problems of helping entrepreneurs succeed</p>
-        <div className='flex overflow-x-scroll justify-center gap-[40px] mb-[80px]'>
+        <div className='flex overflow-x-scroll gap-[40px] mb-[80px]'>
             <Card number={"1"} title={"Ideate"} color={"#1F66AB"}>
                 <p>
                 We internally generate concepts and ideas that help solve problems in our thesis areas, after which we proceed to develop a nano/micro MVP (usually having as low as 30 functions to as high as 100 functions) of the product that we take to the market
@@ -46,7 +46,7 @@ export default function Main() {
         <div className={styles.hypothesis}>
             <h4>Hypothesis</h4>
             <p>Just a few reasons we know its time for this model within the ecosystem</p>
-            <div>
+            <div className='overflow-x-auto'>
                 <Card shape={"triangle"} color={"#FF78BF"}>
                     <p>
                     Most early-stage companies and pre-product startups cannot afford professional services especially those who don’t have family and friends’ network that can support
@@ -152,9 +152,9 @@ export default function Main() {
                 <p>Operations</p>
             </div>
         </div>
-        <div className='flex gap-6 px-6 my-[60px]'>
+        <div className={styles.testWrapper}>
             <div className={styles.testsText}>
-                <h3 className='pb-[24px] text-5xl'>Our 5 Idea-Focused-Tests</h3>
+                <h3 className='pb-[24px] text-5xl'>Our 5 Idea-Focused Tests</h3>
                 <p className='pb-[60px] max-w-[450px]'>Our quick 5 critical questions we usually answer to test an idea for investments and if it passes our value and vision test.</p>
                 <Button text={"Apply to SIP 1.0"}/>
             </div>
