@@ -90,16 +90,16 @@ export default function Main() {
         <div className={styles.sliderContainer}>
             <div className={styles.slider}>
 
-                <Card title={"Source Ideas & Ideate"} color={"#4E4E4E"} number={0}>We come up with our own ideas internally and/or take in exceptional entrepreneurs with ideas within or outside our thesis area into our Service incubation Program (SIP) yearly, then run them through our idea-focus-test (IFT) for fit.
+                <Card title={"Source Ideas & Ideate"} color={"#4E4E4E"} icon={"bulb.png"}>We come up with our own ideas internally and/or take in exceptional entrepreneurs with ideas within or outside our thesis area into our Service incubation Program (SIP) yearly, then run them through our idea-focus-test (IFT) for fit.
                 We quickly build a 5-10 functionality nano MVP or a lead page built for idea visualization</Card>
 
-                <Card title={"Set Up A Team"} color={"#4E4E4E"} number={0}>We take in technical and business cofounders into the portfolio company offering 25% each and a total of 50% stake in the company while we keep 50% as the other cofounder.
+                <Card title={"Set Up A Team"} color={"#4E4E4E"} icon={"team.png"}>We take in technical and business cofounders into the portfolio company offering 25% each and a total of 50% stake in the company while we keep 50% as the other cofounder.
                 We then put together 6-10 people on-demand remote team (who are service incubators) to help build, launch and validate the MVP with 250 functionalities, worth $25k for a 10% stake.</Card>
 
-                <Card title={"Fast Experiment"} color={"#4E4E4E"} number={0}>We quickly test the selected ideas by taking them through our 4 Weeks Founder School Sprint and extending the product to a Micro-MVP (mMVP) which may be between 10-30 functionality app to test the idea for market acceptance. 
+                <Card title={"Fast Experiment"} color={"#4E4E4E"} icon={"steam.png"}>We quickly test the selected ideas by taking them through our 4 Weeks Founder School Sprint and extending the product to a Micro-MVP (mMVP) which may be between 10-30 functionality app to test the idea for market acceptance. 
                 After the 4 weeks test, we drop the ones that don’t work or timing is not right, then we continue MVP development for those that we think has a future</Card>
 
-                <Card title={"Build, Launch, Validate & Grow"} color={"#4E4E4E"} number={0}>For the ideas that are ready to market after the 4 weeks of market acceptance test, the Service Incubators will proceed to build the complete MVP for an exchange of 10% equity in the startup usually having as much as 250 functionalities for another 12 weeks in return for the service shares.
+                <Card title={"Build, Launch, Validate & Grow"} color={"#4E4E4E"} icon={"rocket.png"}>For the ideas that are ready to market after the 4 weeks of market acceptance test, the Service Incubators will proceed to build the complete MVP for an exchange of 10% equity in the startup usually having as much as 250 functionalities for another 12 weeks in return for the service shares.
                 This MVP will be validated in a large and broader market for final iteration before raising funds for further development</Card>
             </div>
         </div>
