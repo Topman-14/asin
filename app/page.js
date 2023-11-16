@@ -18,7 +18,7 @@ export default function Home() {
         <Navbar handleClick={toggleNav}/>
         <Hero />
         <Main />
-        {/* <Footer /> */}
+        <Footer />
       </main>
   )
 }

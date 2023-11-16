@@ -15,7 +15,7 @@ export default function Main() {
         <Button text={"Read About Us"}/>
         <h3>Our 5 Areas of Focus</h3>
         <p>In our quest to help make success available to everyone, we have initial strategic <br />directions to focus on these five (5) key areas at the lab</p>
-        <div className='flex justify-center flex-wrap mt-6 mb-16 mx-5'>
+        <div className={styles.aof}>
             <Tile color={"#1F66AB"} title={"01"} text={"Business Support & Incubation"} />
             <Tile color={"#F47733"} title={"02"} text={"On-Demand & As-A-Service"} />
             <Tile color={"#FF78BF"} title={"03"} text={"Marketplace & Crowdsourcing"} />
@@ -24,7 +24,7 @@ export default function Main() {
         </div>
         <h3>We are your 3rd Co-founder</h3>
         <p>We seek to collaborate with visionary individuals who are solving similar problems of helping entrepreneurs succeed</p>
-        <div className='flex flex-wrap justify-center gap-[40px] mb-[80px]'>
+        <div className='flex overflow-x-scroll gap-[40px] mb-[80px]'>
             <Card number={"1"} title={"Ideate"} color={"#1F66AB"}>
                 <p>
                 We internally generate concepts and ideas that help solve problems in our thesis areas, after which we proceed to develop a nano/micro MVP (usually having as low as 30 functions to as high as 100 functions) of the product that we take to the market
@@ -46,7 +46,7 @@ export default function Main() {
         <div className={styles.hypothesis}>
             <h4>Hypothesis</h4>
             <p>Just a few reasons we know its time for this model within the ecosystem</p>
-            <div>
+            <div className='overflow-x-auto'>
                 <Card shape={"triangle"} color={"#FF78BF"}>
                     <p>
                     Most early-stage companies and pre-product startups cannot afford professional services especially those who don’t have family and friends’ network that can support
@@ -90,16 +90,16 @@ export default function Main() {
         <div className={styles.sliderContainer}>
             <div className={styles.slider}>
 
-                <Card title={"Source Ideas & Ideate"} color={"#4E4E4E"} number={0}>We come up with our own ideas internally and/or take in exceptional entrepreneurs with ideas within or outside our thesis area into our Service incubation Program (SIP) yearly, then run them through our idea-focus-test (IFT) for fit.
+                <Card title={"Source Ideas & Ideate"} color={"#4E4E4E"} icon={"bulb.png"}>We come up with our own ideas internally and/or take in exceptional entrepreneurs with ideas within or outside our thesis area into our Service incubation Program (SIP) yearly, then run them through our idea-focus-test (IFT) for fit.
                 We quickly build a 5-10 functionality nano MVP or a lead page built for idea visualization</Card>
 
-                <Card title={"Set Up A Team"} color={"#4E4E4E"} number={0}>We take in technical and business cofounders into the portfolio company offering 25% each and a total of 50% stake in the company while we keep 50% as the other cofounder.
+                <Card title={"Set Up A Team"} color={"#4E4E4E"} icon={"team.png"}>We take in technical and business cofounders into the portfolio company offering 25% each and a total of 50% stake in the company while we keep 50% as the other cofounder.
                 We then put together 6-10 people on-demand remote team (who are service incubators) to help build, launch and validate the MVP with 250 functionalities, worth $25k for a 10% stake.</Card>
 
-                <Card title={"Fast Experiment"} color={"#4E4E4E"} number={0}>We quickly test the selected ideas by taking them through our 4 Weeks Founder School Sprint and extending the product to a Micro-MVP (mMVP) which may be between 10-30 functionality app to test the idea for market acceptance. 
+                <Card title={"Fast Experiment"} color={"#4E4E4E"} icon={"steam.png"}>We quickly test the selected ideas by taking them through our 4 Weeks Founder School Sprint and extending the product to a Micro-MVP (mMVP) which may be between 10-30 functionality app to test the idea for market acceptance. 
                 After the 4 weeks test, we drop the ones that don’t work or timing is not right, then we continue MVP development for those that we think has a future</Card>
 
-                <Card title={"Build, Launch, Validate & Grow"} color={"#4E4E4E"} number={0}>For the ideas that are ready to market after the 4 weeks of market acceptance test, the Service Incubators will proceed to build the complete MVP for an exchange of 10% equity in the startup usually having as much as 250 functionalities for another 12 weeks in return for the service shares.
+                <Card title={"Build, Launch, Validate & Grow"} color={"#4E4E4E"} icon={"rocket.png"}>For the ideas that are ready to market after the 4 weeks of market acceptance test, the Service Incubators will proceed to build the complete MVP for an exchange of 10% equity in the startup usually having as much as 250 functionalities for another 12 weeks in return for the service shares.
                 This MVP will be validated in a large and broader market for final iteration before raising funds for further development</Card>
             </div>
         </div>
@@ -152,9 +152,9 @@ export default function Main() {
                 <p>Operations</p>
             </div>
         </div>
-        <div className='flex gap-6 px-3'>
+        <div className={styles.testWrapper}>
             <div className={styles.testsText}>
-                <h3 className='pb-[24px] text-5xl'>Our 5 Idea-Focused-Tests</h3>
+                <h3 className='pb-[24px] text-5xl'>Our 5 Idea-Focused Tests</h3>
                 <p className='pb-[60px] max-w-[450px]'>Our quick 5 critical questions we usually answer to test an idea for investments and if it passes our value and vision test.</p>
                 <Button text={"Apply to SIP 1.0"}/>
             </div>
@@ -273,6 +273,82 @@ export default function Main() {
             </div>
         </div>
         <h3>Blogs & Resources</h3>
+        <div className={styles.resources}>
+            <div>
+                <iframe  src="https://www.youtube.com/embed/wDchsz8nmbo?si=Qgx-VkVPsP-U38hb" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen></iframe>
+                <div>
+                    <div>
+                        <p>Top Ten Most Powerful Startup</p>
+                        <p>Top Ten Most Powerful Startup Top Ten Most Powerful Startup Top Ten Most Powerful Startup</p>
+                    </div>
+                    <img src="/images/frame1.png" alt="" />
+                </div>
+            </div>
+            <div>
+                <iframe  src="https://www.youtube.com/embed/wDchsz8nmbo?si=Qgx-VkVPsP-U38hb" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen></iframe>
+                <div>
+                    <div>
+                        <p>Top Ten Most Powerful Startup</p>
+                        <p>Top Ten Most Powerful Startup Top Ten Most Powerful Startup Top Ten Most Powerful Startup</p>
+                    </div>
+                    <img src="/images/frame2.png" alt="" />
+                </div>
+            </div>
+            <div>
+                <iframe src="https://www.youtube.com/embed/wDchsz8nmbo?si=Qgx-VkVPsP-U38hb" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen></iframe>
+                <div>
+                    <div>
+                        <p>Top Ten Most Powerful Startup</p>
+                        <p>Top Ten Most Powerful Startup Top Ten Most Powerful Startup Top Ten Most Powerful Startup</p>
+                    </div>
+                    <img src="/images/frame3.png" alt="" />
+                </div>
+            </div>
+        </div>
+        <h4 className="pt-[100px] text-xl font-semibold">As Featured In</h4>
+        <div className={styles.featured}>
+            <div>
+                <img src="/images/punchnews-img.jpg" alt="" />
+                <div>
+                    <img src="/images/punchnews.png" alt="" />
+                    <p>SINC Partners invests  over 200 million naira in 5 startups</p>
+                    <p>SINC Partners invests  over 200 million naira in 5 startups SINC Partners invests  over 200 million naira in 5 startups SINC Partners invests  over 200 million naira in 5 startups...</p>
+                    <p>REPORTED BY: <br /> Rema Viel</p>
+                </div>
+            </div>
+            <div>
+                <img src="/images/bujnewsimg.png" alt="" />
+                <div>
+                    <img src="/images/bujnews.png" alt="" />
+                    <p>SINC Partners invests  over 200 million naira in 5 startups</p>
+                    <p>SINC Partners invests  over 200 million naira in 5 startups SINC Partners invests  over 200 million naira in 5 startups SINC Partners invests  over 200 million naira in 5 startups...</p>
+                    <p>REPORTED BY: <br /> Rema Viel</p>
+                </div>
+            </div>
+            <div>
+                <img src="/images/ontexnewsimg.jpg" alt="" />
+                <div>
+                    <img src="/images/ontexnews.png" alt="" />
+                    <p>SINC Partners invests  over 200 million naira in 5 startups</p>
+                    <p>SINC Partners invests  over 200 million naira in 5 startups SINC Partners invests  over 200 million naira in 5 startups SINC Partners invests  over 200 million naira in 5 startups...</p>
+                    <p>REPORTED BY: <br /> Rema Viel</p>
+                </div>
+            </div>
+            <div>
+                <img src="/images/guardiannewsimg.jpg" alt="" />
+                <div>
+                    <img src="/images/guardiannews.png" alt="" />
+                    <p>SINC Partners invests  over 200 million naira in 5 startups</p>
+                    <p>SINC Partners invests  over 200 million naira in 5 startups SINC Partners invests  over 200 million naira in 5 startups SINC Partners invests  over 200 million naira in 5 startups...</p>
+                    <p>REPORTED BY: <br /> Rema Viel</p>
+                </div>
+            </div>
+        </div>
+        <h2 className={styles.h2}>Let's build companies that help everyone succeed</h2>
+        <div className='flex justify-center gap-[10px] mt-[40px] mb-[100px]'>
+            <Button text={"SINC With Us"} type={"tertiary"}/>
+            <Button text={"Apply to SIP 1.0"}/>
+        </div>
     </section>
   )
 }
